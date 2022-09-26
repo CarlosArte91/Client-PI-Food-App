@@ -1,0 +1,187 @@
+html, body {
+    width: auto;
+    height: auto;
+    background-color: aquamarine;
+    margin: 0;
+    padding: 0;
+}
+
+.containerForm {
+    border-radius: 15px;
+    background-color: #e6ccb2;
+    border: solid 5px #7f5539;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    margin: 3% 10%;
+    padding: 3% 11%;
+    gap: 5px;
+}
+
+.global {
+    color: white;
+    font-size: 95%;
+    font-weight: 600;
+    background-color: #7f5539;
+    width: auto;
+    height: 1200px;
+    border-radius: 15px;
+    padding: 4% 0;
+    display: grid;
+    grid-template-rows: repeat(3, 7%) 21% 21% 1fr;
+}
+
+.general button {
+    padding: 10px;
+    background-color: #ff7b00;
+    background-color: #7f5539;    
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border: solid 2px  rgb(103, 99, 99);
+    border-radius: 5px;
+}
+
+.general button:hover {
+    background-color: rgb(52, 50, 50);
+    border: solid 2px  rgb(164, 160, 160);
+    color: aquamarine;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+.submit input {
+    width: 18%;
+    margin-top: 3%;
+    padding: 10px;
+    background-color: #ff7b00;
+    background-color: #7f5539;    
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border: solid 2px  rgb(103, 99, 99);
+    border-radius: 5px;
+}
+
+.submit input:hover {
+    background-color: rgb(52, 50, 50);
+    border: solid 2px  rgb(164, 160, 160);
+    color: aquamarine;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.formTitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1% 0 5% 0;
+    font-size: 130%;
+    font-weight: 600;
+}
+
+.containerForm p {
+    font-size: 80%;
+    font-weight: 100;
+    color: rgb(60, 2, 2);
+    padding: 0;
+    margin: 0;
+}
+
+.name {
+    padding-left: 20%;
+}
+
+.name label {
+    display: block;
+}
+
+.name input {
+    width: 50%;
+    margin: 1% 0 1% 0;
+}
+
+.image {
+    padding-left: 20%;
+}
+
+.image label {
+    display: block;
+}
+
+.image input {
+    width: 65%;
+    margin: 1% 0 1% 0;
+}
+
+.healt {
+    padding-left: 20%;
+}
+
+.healt label {
+    display: block;
+}
+
+.healt input {
+    width: 20%;
+    margin: 1% 0 1% 0;
+}
+
+.summary {
+    padding-left: 20%;
+}
+
+.summary label {
+    display: block;
+}
+
+.summary textarea {
+    width: 75%;
+    height: 73%;
+    margin: 1% 0 1% 0;
+}
+
+.diets p {
+    padding-left: 20%;
+}
+
+.diets label {
+    padding-left: 20%;
+}
+
+.diets2 {
+    padding-left: 23%;
+    font-weight: 100;
+    margin: 1% 0;
+}
+
+.steps {
+    padding-left: 20%;
+}
+
+.steps textarea {
+    width: 75%;
+    height: 60px;
+    margin: 1% 0;
+}
+
+.steps button {
+    width: 20%;
+    margin: 0 0 3% 2%;
+    background-color: #e6ccb2;
+    color: #7f5539;
+}
+
+.add {
+    padding-left: 28%;
+}
+
+.area textarea {
+    height: 250px;
+}

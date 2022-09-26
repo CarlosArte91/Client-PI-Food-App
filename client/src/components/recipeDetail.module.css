@@ -1,0 +1,120 @@
+html, .general {
+    width: auto;
+    height: auto;
+    background-color: aquamarine;
+    margin: 0;
+    padding: 0;
+}
+
+.containerDetail {
+    border-radius: 15px;
+    background-color: #e6ccb2;
+    border: solid 5px #7f5539;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    margin: 3% 6%;
+    padding: 3% 5%;
+    gap: 5px;
+}
+
+.home button {
+    padding: 10px;
+    background-color: #ff7b00;
+    background-color: #7f5539;    
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border: solid 2px  rgb(103, 99, 99);
+    border-radius: 5px;
+}
+
+.home button:hover {
+    background-color: rgb(52, 50, 50);
+    border: solid 2px  rgb(164, 160, 160);
+    color: aquamarine;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.containerDetail h1 {
+    font-size: 23px;
+    text-align: center;
+}
+
+.container2 {
+    background-color: #7f5539;
+    border-radius: 15px;
+    padding: 3% 5% 1% 5%;
+    display: grid;
+    grid-template-columns: 50% 20%;
+    gap: 5%;
+}
+
+.container3 {
+    background-color: #7f5539;
+    border-radius: 15px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 80% 15%;
+    justify-content: center;
+}
+
+.container5 {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.container3 img {
+    display: flex;
+    margin-top: 2%;
+    border-radius: 15px;
+    width: 60%;
+}
+
+.container4 {
+    margin-top: 5%;
+    color: white;    
+}
+
+.containerDiet span {
+    display: flex;
+    margin: 10% 0 13% 0;
+    font-weight: 600;
+    color: white;
+}
+
+.containerDiet p {
+    color: white;
+    font-size: 90%;
+}
+
+.containerSummary {
+    padding: 4% 6% 4% 7%;
+}
+
+.containerSummary span {
+    font-weight: 600;
+}
+
+.containerSummary p {
+    font-size: 90%;
+}
+
+.containerSteps {
+    padding: 0% 4% 4% 4%;
+}
+
+.containerSteps span {
+    font-weight: 600;
+}
+
+.containerP {
+    font-size: 90%;
+    padding: 10px 0 15px 0;
+    border-bottom: solid 3px #7f5539;
+}
+

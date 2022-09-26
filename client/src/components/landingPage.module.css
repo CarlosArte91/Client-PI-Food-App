@@ -1,0 +1,48 @@
+.container {
+    height: 70vh;
+    background-color: aquamarine;
+    color: rgb(52, 50, 50);
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 50vh;
+    padding-top: 8%;
+    padding-bottom: 12%;
+}
+
+.title {
+    margin-bottom: 0;
+}
+
+.container > div {
+    display: grid;
+    grid-template-rows: 50% 20% 30%;
+    text-align: center;
+}
+
+.header {    
+    font-size: 120%;
+    align-items: center;
+    display: grid;
+}
+
+.kitchen img {
+    width: 100%;
+}
+
+.button {
+    padding: 10px;
+    background-color: aquamarine;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(52, 50, 50);
+    border: solid 2px  rgb(52, 50, 50);
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: rgb(52, 50, 50);
+    color: aquamarine;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}

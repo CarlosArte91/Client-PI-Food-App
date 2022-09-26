@@ -1,0 +1,82 @@
+.containerAll {
+    background-color: #e6ccb2;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);    
+    transition: all 0.25s;
+    display: grid;
+    grid-template-rows: repeat(2, auto) 12%;
+}
+
+.containerAll:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.4);
+}
+
+.containerHeader {
+    background-color: #7f5539;
+    border-radius: 15px 15px 0 0;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    margin-bottom: 3%;
+}
+
+.containerTitle {    
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 60% 35%;
+    gap: 5%;
+}
+
+.nameTitle {
+    font-size: 70%;
+    font-weight: 549;
+    padding: 0 4%;
+    color: white;
+    
+}
+
+.nameTitle span {
+    text-decoration: none;
+}
+
+.points {
+    font-size: 80%;
+    background-color: white;
+}
+
+.image {
+    width: 100%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0 0 0;
+}
+
+.containerDiets {
+    font-size: 60%;
+    color: #53280b;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 2%;
+    padding: 0 1%;
+    margin-bottom: 3%;
+}
+
+.containerButton {
+    border-radius: 0px 0px 15px 15px;
+    font-size: 90%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerButton span {
+    color: #5a189a;
+}

@@ -1,0 +1,92 @@
+.header {
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 16% repeat(4, 19%);
+    gap: 2%;
+}
+
+.headerImage {
+    width: 85%;
+}
+
+.headerImage img {
+    width: 100%;
+}
+
+.order {
+    font-size: 80%;    
+    display: grid;
+    grid-template-rows: 30% repeat(2, auto);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 3%;
+}
+
+.order select {
+    width: 100%;
+    font-size: 90%;
+    padding: 1% 0;
+    margin-top: 2%;
+}
+
+.orderAlpha, .orderHealth span {
+    display: flex;
+    text-align: left;    
+}
+
+.orderTitle {
+    font-weight: 600;
+}
+
+.filterDiet {
+    font-size: 80%; 
+    display: grid;
+    grid-template-rows: 30% 1fr;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 3%;
+}
+
+.filterDiet div {
+    width: 100%;
+}
+
+.filterDiet select {
+    align-items: center;
+    width: 110%;
+    font-size: 90%;
+    padding: 1% 0;
+    margin-bottom: 25%;
+}
+
+.filterDiet span {
+    font-weight: 600;
+}
+
+.newRecipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newRecipe button {
+    padding: 10px;
+    background-color: #ff7b00;
+    background-color: #e6ccb2;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(65, 62, 62);
+    border: solid 2px  rgb(103, 99, 99);
+    border-radius: 5px;
+}
+
+.newRecipe button:hover {
+    background-color: rgb(52, 50, 50);
+    border: solid 2px  rgb(164, 160, 160);
+    color: aquamarine;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}

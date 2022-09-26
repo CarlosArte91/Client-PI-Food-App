@@ -1,0 +1,17 @@
+.recipePaginated {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 90% 1fr;
+    gap: 3%;
+    padding-bottom: 3%;
+}
+
+.containerRecipe {
+    padding: 2% 8% 9% 8%;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 8% 5%;
+}
