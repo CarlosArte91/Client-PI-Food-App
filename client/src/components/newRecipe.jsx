@@ -1,14 +1,16 @@
 import axios from 'axios';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import controllerForm from '../util/controllerForm.js';
 import style from './newRecipe.module.css';
+import Swal from 'sweetalert2';
 
 let dietsIds = [];
 let nStep = 1;
 
 export default function NewRecipe() {
+    const navigate = useNavigate();
     const diets = useSelector((state) => state.diets);
     const [newRecipe, setNewRecipe] = useState({
         name: '',
@@ -84,26 +86,41 @@ export default function NewRecipe() {
             if (messageError) break;
             else messageError = error[item];            
         };
-        if (messageError) alert(messageError);
-        else {
-            axios.post(`http://localhost:3001/api/recipes`, newRecipe);
-            alert('Your recipe was successfully created');
-    
-            setNewRecipe({
-                name: '',
-                image: '',
-                healthScore: '',
-                summary: '',
-                steps: '',
-                diets: []     
+        if (messageError) {
+            Swal.fire({
+                title: `${messageError}`,
+                icon: "warning"
+            }).then(response => {
+                console.log("error");
             });
-            setSaveSteps({});
-            setListSteps('');
-            setTextareaValue('');
-            nStep = 1;
+        }
+        else {
+            axios.post(`${process.env.REACT_APP_API_URL}/api/recipes`, newRecipe);
 
-            diets.forEach(diet => {
-                document.getElementById(diet.id).checked = false
+            Swal.fire({
+                title: "Your recipe was successfully created",
+                icon: "success"
+            }).then(response => {
+                if (response) {
+                    setNewRecipe({
+                        name: '',
+                        image: '',
+                        healthScore: '',
+                        summary: '',
+                        steps: '',
+                        diets: []     
+                    });
+                    setSaveSteps({});
+                    setListSteps('');
+                    setTextareaValue('');
+                    nStep = 1;
+        
+                    diets.forEach(diet => {
+                        document.getElementById(diet.id).checked = false
+                    });
+        
+                    navigate("/home");
+                }
             });
         }
     };

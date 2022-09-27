@@ -12,7 +12,7 @@ export const GET_DIETS = 'GET_DIETS';
 
 export function fetchRecipes() {
     return function(dispatch) {
-        axios.get(`http://localhost:3001/api/recipes`)
+        axios.get(`${process.env.REACT_APP_API_URL}/api/recipes`)
         .then((recipes) => {
             dispatch({
                 type: FETCH_RECIPES,
@@ -24,7 +24,7 @@ export function fetchRecipes() {
 
 export function searchRecipes(search) {
     return function(dispatch) {
-        axios.get(`http://localhost:3001/api/recipes?name=${search}`)
+        axios.get(`${process.env.REACT_APP_API_URL}/api/recipes?name=${search}`)
         .then((recipes) => {
             dispatch({
                 type: SEARCH_RECIPES,
@@ -102,7 +102,7 @@ export function setSelectScore(set) {
 
 export function recipesDetails(id) {
     return function(dispatch) {
-        axios.get(`http://localhost:3001/api/recipes/by?id=${id}`)
+        axios.get(`${process.env.REACT_APP_API_URL}/api/recipes/by?id=${id}`)
         .then(recipe => {
             dispatch({
                 type: RECIPE_DETAIL,
@@ -114,7 +114,7 @@ export function recipesDetails(id) {
 
 export function getDiets() {
     return function(dispatch) {
-        axios.get(`http://localhost:3001/api/diets`)
+        axios.get(`${process.env.REACT_APP_API_URL}/api/diets`)
         .then((diets) => {
             dispatch({
                 type: GET_DIETS,
