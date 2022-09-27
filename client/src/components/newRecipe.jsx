@@ -95,7 +95,7 @@ export default function NewRecipe() {
             });
         }
         else {
-            axios.post(`${process.env.REACT_APP_API_URL}/api/recipes`, newRecipe);
+            axios.post(`https://food-app-lfzj.onrender.com/api/recipes`, newRecipe);
 
             Swal.fire({
                 title: "Your recipe was successfully created",
